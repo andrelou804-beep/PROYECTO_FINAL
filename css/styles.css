@@ -1,0 +1,231 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Fraunces", serif;
+}
+
+.navbar-lily {
+    background-color: #e6c8ce;
+}
+
+.navbar-lily .navbar-brand {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #4a2a33;
+}
+
+.navbar-lily .nav-link {
+    color: #4a2a33;
+    font-weight: 500;
+    padding: 0.5rem 0.9rem;
+}
+
+.navbar-lily .nav-link:hover,
+.navbar-lily .nav-link:focus {
+    color: #a3475d;
+}
+
+#inicio {
+    background-color: #fbf1f3;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+
+.card-container {
+    display: flex;
+    margin: 5rem;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    gap: 20px;
+    box-shadow: #65667b 0px 0px 10px;
+    background-color: #eaacb8;
+    text-align: center;
+    
+}
+
+#navbar-cabello {
+    background-color: pink;
+}
+
+
+.promo-banner,
+.promo-testimonio,
+.promo-productos {
+    margin: 3rem auto;
+}
+
+
+.promo-banner {
+    position: relative;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(74, 42, 51, 0.2);
+}
+
+.promo-banner img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promo-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(74, 42, 51, 0.65), transparent 70%);
+}
+
+.promo-banner__texto {
+    position: relative;
+    z-index: 1;
+    padding: 2rem 3rem;
+    max-width: 520px;
+    color: #fff;
+}
+
+.promo-script {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+}
+
+.promo-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.5rem;
+    background: #a3475d;
+    color: #fff;
+    border-radius: 50rem;
+    text-decoration: none;
+}
+
+.promo-btn:hover {
+    background: #8a3a4d;
+    color: #fff;
+}
+
+.promo-productos h3 {
+    text-align: center;
+    color: #4a2a33;
+    margin-bottom: 1.5rem;
+}
+
+.promo-producto {
+    display: block;
+    height: 100%;
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: #4a2a33;
+    box-shadow: 0 4px 12px rgba(74, 42, 51, 0.15);
+    transition: transform 0.2s;
+}
+
+.promo-producto:hover {
+    transform: translateY(-4px);
+}
+
+.promo-producto img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.promo-producto div {
+    padding: 1rem;
+}
+
+.promo-producto span {
+    color: #a3475d;
+    font-weight: 600;
+}
+
+
+.promo-titulo-linea {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Dancing Script", cursive;
+    font-size: 2.5rem;
+    color: #a3475d;
+}
+
+.promo-titulo-linea::before,
+.promo-titulo-linea::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #d4a95f;
+}
+
+.promo-testimonio__fila {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.promo-corazon {
+    box-sizing: border-box;
+    width: 300px;
+    aspect-ratio: 1;
+    padding: 8px;
+    background: linear-gradient(135deg, #e9cf8f, #c9a24d); /* borde dorado */
+    clip-path: url(#forma-corazon);
+}
+
+.promo-corazon__foto {
+    width: 100%;
+    height: 100%;
+    clip-path: url(#forma-corazon);
+}
+
+.promo-corazon__foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promo-testimonio blockquote {
+    max-width: 420px;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    color: #4a2a33;
+}
+
+.promo-testimonio cite {
+    display: block;
+    margin-top: 1rem;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.8rem;
+    font-style: normal;
+    color: #a3475d;
+}
+
+a.btn-rosa-pastel {
+  background-color: #f8c8dc;
+  color: #333333;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+}
+
+a.btn-rosa-pastel:hover {
+  background-color: #f4b6d0;
+  color: #000000;
+}
