@@ -6,6 +6,10 @@ body {
     font-family: "Fraunces", serif;
 }
 
+/* =========================================
+   NAVBAR E INICIO
+   ========================================= */
+
 .navbar-lily {
     background-color: #e6c8ce;
 }
@@ -34,31 +38,119 @@ body {
     padding: 5rem 0;
 }
 
+/* =========================================
+   TARJETAS DE PRESENTACIÓN (LILIANA / SERVICIOS)
+   ========================================= */
 
 .card-container {
     display: flex;
-    margin: 5rem;
-    align-items: center;
-    flex-direction: row;
-    padding: 10px;
-    gap: 20px;
-    box-shadow: #65667b 0px 0px 10px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    max-width: 1140px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    box-shadow: 0 4px 15px rgba(74, 42, 51, 0.18);
     background-color: #eaacb8;
+    border-radius: 1rem;
     text-align: center;
-    
 }
 
-#navbar-cabello {
-    background-color: pink;
+.card-container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 300px;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    color: #4a2a33;
 }
 
+/* =========================================
+   SECCIONES DE SERVICIOS Y TARJETAS UNIFORMES
+   ========================================= */
+
+#navbar-cabello,
+.seccion-servicios {
+    background-color: #fbf1f3;
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1rem;
+}
+
+.seccion-servicios h2 {
+    text-align: center;
+    color: #4a2a33;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.75rem;
+    cursor: pointer;
+}
+
+/* Asegura que cada columna de Bootstrap estire a su tarjeta hija */
+.row > [class*="col"] {
+    display: flex;
+}
+
+.servicio-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(74, 42, 51, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(74, 42, 51, 0.2);
+}
+
+.servicio-card .card-img-top {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+}
+
+.servicio-card .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.servicio-card .card-title {
+    color: #4a2a33;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.servicio-card .card-text {
+    color: #5c3a43;
+    font-size: 0.95rem;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+/* =========================================
+   BANNERS PROMOCIONALES
+   ========================================= */
 
 .promo-banner,
 .promo-testimonio,
 .promo-productos {
     margin: 3rem auto;
 }
-
 
 .promo-banner {
     position: relative;
@@ -113,6 +205,10 @@ body {
     color: #fff;
 }
 
+/* =========================================
+   PRODUCTOS DEL SALÓN (MEDIDA ORIGINAL SIN RECORTE)
+   ========================================= */
+
 .promo-productos h3 {
     text-align: center;
     color: #4a2a33;
@@ -120,7 +216,9 @@ body {
 }
 
 .promo-producto {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 100%;
     background: #fff;
     border-radius: 1rem;
@@ -129,7 +227,7 @@ body {
     text-decoration: none;
     color: #4a2a33;
     box-shadow: 0 4px 12px rgba(74, 42, 51, 0.15);
-    transition: transform 0.2s;
+    transition: transform 0.2s ease;
 }
 
 .promo-producto:hover {
@@ -138,12 +236,21 @@ body {
 
 .promo-producto img {
     width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
 }
 
 .promo-producto div {
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.promo-producto div p {
+    flex-grow: 1;
 }
 
 .promo-producto span {
@@ -151,6 +258,14 @@ body {
     font-weight: 600;
 }
 
+#carruselProductos .carousel-control-prev-icon,
+#carruselProductos .carousel-control-next-icon {
+    filter: invert(1) grayscale(100%) brightness(0.2);
+}
+
+/* =========================================
+   TESTIMONIO / DUEÑA
+   ========================================= */
 
 .promo-titulo-linea {
     display: flex;
@@ -183,7 +298,7 @@ body {
     width: 300px;
     aspect-ratio: 1;
     padding: 8px;
-    background: linear-gradient(135deg, #e9cf8f, #c9a24d); /* borde dorado */
+    background: linear-gradient(135deg, #e9cf8f, #c9a24d);
     clip-path: url(#forma-corazon);
 }
 
@@ -216,16 +331,143 @@ body {
     color: #a3475d;
 }
 
-a.btn-rosa-pastel {
-  background-color: #f8c8dc;
-  color: #333333;
-  border: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
+/* =========================================
+   BOTONES Y TEXTOS PERSONALIZADOS
+   ========================================= */
 
+a.btn-rosa-pastel {
+    background-color: #f8c8dc;
+    color: #333333;
+    border: none;
+    font-weight: 500;
+    margin-top: auto;
+    transition: all 0.3s ease;
 }
 
 a.btn-rosa-pastel:hover {
-  background-color: #f4b6d0;
-  color: #000000;
+    background-color: #f4b6d0;
+    color: #000000;
+}
+
+.texto-contacto,
+.texto-contacto2 {
+    color: #f4b6d0;
+}
+
+.btn-custom {
+    background-color: #f4b6d0;
+    color: #0f0e0f !important;
+    border: 1px solid #c9a24d;
+    border-radius: 4px;
+}
+
+.btn-custom:hover {
+    background-color: #ded8d0;
+    color: #110f0f !important;
+    border-color: #ded8d0;
+}
+
+/* =========================================
+   FOOTER - SALA DE BELLEZA LILY
+   ========================================= */
+
+.sbl-footer {
+    background-color: #000000;
+    color: #f4b6d0;
+    border-top: 2px solid #c9a24d;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+
+.sbl-footer-brand {
+    font-family: "Oswald", sans-serif;
+    color: #f4b6d0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.sbl-footer-desc {
+    color: #e6c8ce;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.sbl-footer-heading {
+    font-family: "Oswald", sans-serif;
+    color: #c9a24d;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.sbl-footer-link {
+    color: #f4b6d0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.sbl-footer-link:hover {
+    color: #fbf1f3;
+}
+
+.sbl-footer-icon {
+    color: #c9a24d;
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.sbl-btn-maps {
+    background-color: #f4b6d0;
+    color: #0f0e0f;
+    border: 1px solid #c9a24d;
+    border-radius: 50rem;
+    padding: 0.55rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.sbl-btn-maps:hover {
+    background-color: #ded8d0;
+    color: #110f0f;
+    border-color: #ded8d0;
+}
+
+.sbl-footer-divider {
+    border: 0;
+    border-top: 1px solid #c9a24d;
+    opacity: 0.4;
+    margin: 1.75rem 0;
+}
+
+.sbl-footer-copy {
+    color: #e6c8ce;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.sbl-footer-copy strong {
+    color: #f4b6d0;
+}
+
+/* Borde dorado fino en las letras de los banners */
+.promo-banner__texto .promo-script {
+    color: #fff;
+    -webkit-text-stroke: 1.2px #d4a95a;
+    paint-order: stroke fill;
+}
+
+.promo-banner__texto p {
+    color: #fff;
+    -webkit-text-stroke: 0.6px #d4a95a;
+    paint-order: stroke fill;
 }

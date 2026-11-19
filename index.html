@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <title>SALA DE BELLEZA LILY</title>
     <link rel="icon" type="image/jpeg" href="img/Logo-jpg.jpg">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chatbot.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,7 +16,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -60,432 +60,490 @@
             </div>
         </section>
 
+        <section class="container">
+            <div class="card-container">
+                <article class="card">
+                    <h2>Liliana Maria Arboleda Hernandez</h2>
+                    <p>Profesional con más de 20 años de experiencia en estética, el mejor trato y servicio lo encontrarás aquí.</p>
+                </article>
+                <article class="card" id="middle-card">
+                    <h2>Servicios</h2>
+                    <p>Acá abajo en nuestro menú de opciones encontrarás todos los servicios que tenemos para ofrecerte.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CABELLO MUJERES -->
+        <section id="cabello-mujeres" class="container">
+            <div class="seccion-servicios">
+                <h2 data-bs-toggle="collapse" data-bs-target="#collapse-cabello-mujeres" aria-expanded="true"
+                    aria-controls="collapse-cabello-mujeres">
+                    Cabello Mujeres
+                </h2>
+
+                <div class="collapse show" id="collapse-cabello-mujeres">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 justify-content-center">
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/cepillado-cabello.jpg.jpeg" class="card-img-top" alt="Cepillado de cabello">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cepillado</h5>
+                                    <p class="card-text">Alisado, cepillado y planchado.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/tinturado-cabello.jpg.jpeg" class="card-img-top" alt="Tinturado de cabello">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tinturado</h5>
+                                    <p class="card-text">Mechas, decoloración, rayitos y babylights.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/keratina-cabello.jpg.jpeg" class="card-img-top" alt="Keratina de cabello">
+                                <div class="card-body">
+                                    <h5 class="card-title">Keratina</h5>
+                                    <p class="card-text">Tratamiento con keratinas de alta calidad, también hacemos botox capilar.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/corte-cabello.jpg.jpeg" class="card-img-top" alt="Corte de cabello">
+                                <div class="card-body">
+                                    <h5 class="card-title">Corte</h5>
+                                    <p class="card-text">Corte mariposa, corte capas y perfilado.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER PROMOCIONAL 1 -->
+        <section class="promo-banner container">
+            <img src="img/Banner-salon.jpg" alt="Laminado de cejas">
+            <div class="promo-banner__texto">
+                <h3 class="promo-script">Conoce Nuestro Sitio</h3>
+                <p>Haz tu cita hoy mismo.</p>
+                <a href="#contacto" class="promo-btn">¿Como llegar?</a>
+            </div>
+        </section>
+
+        <!-- CABELLO HOMBRES -->
+        <section id="cabello-hombres" class="container">
+            <div class="seccion-servicios">
+                <h2 data-bs-toggle="collapse" data-bs-target="#collapse-cabello-hombres" aria-expanded="true"
+                    aria-controls="collapse-cabello-hombres">
+                    Cabello Hombres
+                </h2>
+
+                <div class="collapse show" id="collapse-cabello-hombres">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center">
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/corte-hombre.jpg.jpeg" class="card-img-top" alt="Corte de cabello hombre">
+                                <div class="card-body">
+                                    <h5 class="card-title">Corte</h5>
+                                    <p class="card-text">Cortes clásicos para hombre.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/tinturado-hombre.jpg.jpeg" class="card-img-top" alt="Tinturado de cabello hombre">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tinturado</h5>
+                                    <p class="card-text">Rayitos y decoloración completa para hombre.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MASAJES -->
+        <section id="masajes" class="container">
+            <div class="seccion-servicios">
+                <h2 data-bs-toggle="collapse" data-bs-target="#collapse-masajes" aria-expanded="true"
+                    aria-controls="collapse-masajes">
+                    Masajes
+                </h2>
+
+                <div class="collapse show" id="collapse-masajes">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/masaje-relajante.jpg" class="card-img-top" alt="Masaje relajante">
+                                <div class="card-body">
+                                    <h5 class="card-title">Masaje Relajante</h5>
+                                    <p class="card-text">Tipo spa, con música y pequeño refrigerio para degustar.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/masaje-terapeutico.jpg" class="card-img-top" alt="Masaje terapéutico">
+                                <div class="card-body">
+                                    <h5 class="card-title">Masaje Terapéutico</h5>
+                                    <p class="card-text">Para dolores musculares, espasmos y ventosas.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/masaje-reductor.jpg" class="card-img-top" alt="Masaje reductor">
+                                <div class="card-body">
+                                    <h5 class="card-title">Masaje Reductor</h5>
+                                    <p class="card-text">Moldeo corporal y drenaje especializado.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER PROMOCIONAL 2 -->
+        <section class="promo-banner container">
+            <img src="img/promo-cejas.jpg" alt="Laminado de cejas">
+            <div class="promo-banner__texto">
+                <h3 class="promo-script">Promo De Martes</h3>
+                <p>Por hacerte manos y pies te OBSEQUIAMOS tu depilacion de Cejas.</p>
+                <a href="#cejas" class="promo-btn">Ver servicio</a>
+            </div>
+        </section>
+
+        <!-- LIMPIEZA FACIAL -->
+        <section id="limpieza-facial" class="container">
+            <div class="seccion-servicios">
+                <h2 data-bs-toggle="collapse" data-bs-target="#collapse-limpieza-facial" aria-expanded="true"
+                    aria-controls="collapse-limpieza-facial">
+                    Limpieza Facial
+                </h2>
+
+                <div class="collapse show" id="collapse-limpieza-facial">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 justify-content-center">
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/limpieza-facial.jpg.jpeg" class="card-img-top" alt="Limpieza facial">
+                                <div class="card-body">
+                                    <h5 class="card-title">Limpieza Facial</h5>
+                                    <p class="card-text">Limpiezas faciales para acné con máscara LED, vaporozono y alta frecuencia.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/rejuvenecimiento-facial.jpg.jpg" class="card-img-top" alt="Rejuvenecimiento facial">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rejuvenecimiento Facial</h5>
+                                    <p class="card-text">Levantamiento de óvalo facial, líneas de expresión y manchas.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/Acido-facial.jpg.jpg" class="card-img-top" alt="Ácido hialurónico">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ácido Hialurónico</h5>
+                                    <p class="card-text">Hidratación profunda en las capas de la piel, tratamiento inyectado.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/exosomas-facial.jpg.jpg" class="card-img-top" alt="Exosomas faciales">
+                                <div class="card-body">
+                                    <h5 class="card-title">Exosomas Faciales</h5>
+                                    <p class="card-text">Regenerador celular, inyectado en tercio alto, medio y bajo.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MANICURA -->
+        <section id="manicura" class="container">
+            <div class="seccion-servicios">
+                <h2 data-bs-toggle="collapse" data-bs-target="#collapse-manicura" aria-expanded="true"
+                    aria-controls="collapse-manicura">
+                    Manicura
+                </h2>
+
+                <div class="collapse show" id="collapse-manicura">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center">
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/uñas-clasicas.jpg" class="card-img-top" alt="Uñas mujer">
+                                <div class="card-body">
+                                    <h5 class="card-title">Uñas Clásicas Mujer</h5>
+                                    <p class="card-text">Manicura y decorados clásicos para uñas naturales.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/uñas-hombre.jpg" class="card-img-top" alt="Uñas hombre">
+                                <div class="card-body">
+                                    <h5 class="card-title">Uñas Clásicas Hombre</h5>
+                                    <p class="card-text">Manicura y cuidado clásico para uñas naturales.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS DEL SALÓN -->
+        <section class="promo-productos container">
+            <h3>Productos del salón</h3>
+            <div id="carruselProductos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500"
+                data-bs-pause="hover">
+                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                    <div class="col">
+                        <a href="#contacto" class="promo-producto">
+                            <img src="img/publicidad1.jpg.jpg" alt="Nova Termo Protector Camar">
+                            <div>
+                                <h4>Nova Termo Protector Camar</h4>
+                                <p>Escudo térmico 230°C, brillo sedoso, anti-frizz y libre de sulfatos.</p>
+                                <span>Ver producto →</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#contacto" class="promo-producto">
+                            <img src="img/publicidad2.jpg.jpg" alt="Camar Tratamiento de Arroz">
+                            <div>
+                                <h4>Camar Tratamiento de Arroz</h4>
+                                <p>Nutrición y brillo intenso con extracto de arroz que hidrata y repara.</p>
+                                <span>Ver producto →</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#contacto" class="promo-producto">
+                            <img src="img/publicidad3..jpg" alt="Qamar Tónico Capilar">
+                            <div>
+                                <h4>Qamar Tónico Capilar</h4>
+                                <p>Elixir botánico natural de uso diario para crecimiento y fortalecimiento.</p>
+                                <span>Ver producto →</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PEDICURA -->
+        <section id="pedicura" class="container">
+            <div class="seccion-servicios">
+                <h2 data-bs-toggle="collapse" data-bs-target="#collapse-pedicura" aria-expanded="true"
+                    aria-controls="collapse-pedicura">
+                    Pedicura
+                </h2>
+
+                <div class="collapse show" id="collapse-pedicura">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center">
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/pedicura-mujer.jpg" class="card-img-top" alt="Pedicura mujer">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pedicura Clásico Mujer</h5>
+                                    <p class="card-text">Pedicura y decoración para mujeres, con hidratación y exfoliación.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/Pedicura-hombre.jpg.jpg" class="card-img-top" alt="Pedicura hombre">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pedicura Clásico Hombre</h5>
+                                    <p class="card-text">Pedicura para hombres, desencarnar uñas enterradas y alivio del dolor.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIO / DUEÑA -->
+        <section class="promo-testimonio container">
+            <h3 class="promo-titulo-linea">Liliana Maria Arboleda</h3>
+            <div class="promo-testimonio__fila">
+                <div class="promo-corazon">
+                    <div class="promo-corazon__foto">
+                        <img src="img/foto-personal2.jpg.jpg" alt="Liliana Maria Arboleda">
+                    </div>
+                </div>
+                <blockquote>
+                    <p>Soy la dueña de la sala de belleza lily, siempre feliz de atenderlos, llevo más de 20 años de
+                        trayectoria, amo mi trabajo y ofrecerles lo mejor a cada una de mis clientes y clientas, conmigo y
+                        mi equipo de trabajo van a recibir un servicio excepcional y de excelente calidad, los esperamos en
+                        Villamaría, Caldas.</p>
+                    <cite>Liliana Maria Arboleda</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- CEJAS -->
+        <section id="cejas" class="container">
+            <div class="seccion-servicios">
+                <h2 data-bs-toggle="collapse" data-bs-target="#collapse-cejas" aria-expanded="true"
+                    aria-controls="collapse-cejas">
+                    Cejas
+                </h2>
+
+                <div class="collapse show" id="collapse-cejas">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center">
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/depilacion-cera.jpg" class="card-img-top" alt="Cejas depilación cera">
+                                <div class="card-body">
+                                    <h5 class="card-title">Depilación con Cera</h5>
+                                    <p class="card-text">Depilación con cera clásica y natural, alta definición y durabilidad.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card servicio-card">
+                                <img src="img/depilacion-henna.jpg.jpeg" class="card-img-top" alt="Cejas depilación henna">
+                                <div class="card-body">
+                                    <h5 class="card-title">Depilación con Henna</h5>
+                                    <p class="card-text">Sombreado de henna para cejas, definición y resalto.</p>
+                                    <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section class="card-container">
-        <article class="card">
-            <h2>Liliana Maria Arboleda Hernandez</h2>
-            <p>Profesional con mas de 20 años de experiencia en estetica, el mejor trato y servicio lo encontraras aqui
-            </p>
-        </article>
-        <article class="card" id="middle-card">
-            <h2>Servicios</h2>
-            <p>Aca abajo en nuestro menu de opciones encontraras todos los servicios que tenemos para ofrecerte.</p>
-        </article>
+    <!-- CHATBOT FLOTANTE -->
+    <section>
+        <button id="chat-toggle-btn" class="chat-toggle-btn" onclick="toggleChat()">
+            <i class="bi bi-whatsapp"></i> Solicitar cita
+        </button>
 
-    </section>
-
-    <section id="cabello-mujeres">
-        <div class="py-3 mb-4 w-100 rounded-3" id="navbar-cabello">
-
-            <h2 class="bg-transparent theme-primary" type="button" data-bs-toggle="collapse"
-                data-bs-target="#cabello-mujeres" aria-expanded="false" aria-controls="cabello-mujeres">
-                Cabello mujeres
-            </h2>
-
-            <div style="min-height: 140px;">
-                <div class="collapse collapse-horizontal text-center" id="cabello-mujeres">
-                    <div class="row justify-content-center g-3">
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/cepillado-cabello.jpg.jpeg" class="card-img-top" alt="Cepillado de cabello">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Cepillado</h5>
-                                <p class="card-text fg-2">Alisado , cepillado y planchado.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/tinturado-cabello.jpg.jpeg" class="card-img-top" alt="Tinturado de cabello">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Tinturado</h5>
-                                <p class="card-text fg-2">Mechas , decoloracion , rayitos y babylights</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/keratina-cabello.jpg.jpeg" class="card-img-top" alt="Keratina de cabello">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Keratina</h5>
-                                <p class="card-text fg-2">Tratamiento con keratinas de alta calidad , tambien hacemos
-                                    botox capilar.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/corte-cabello.jpg.jpeg" class="card-img-top" alt="Corte de cabello">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Corte</h5>
-                                <p class="card-text fg-2">corte mariposa, corte capas y perfilado.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
+        <div id="chat-widget" class="chat-widget hidden">
+            <div class="chat-header">
+                <div class="header-info">
+                    <div class="avatar">
+                        <img src="img/Logo-jpg.jpg" class="img-fluid" alt="Avatar">
                     </div>
-
-                </div>
-            </div>
-        </div>
-
-
-
-    </section>
-
-
-    <section class="promo-banner container">
-        <img src="../img/producto-prom.jpg" alt="Laminado de cejas">
-        <div class="promo-banner__texto">
-            <h3 class="promo-script">Laminado de cejas</h3>
-            <p>Cejas definidas, con forma y volumen por semanas.</p>
-            <a href="#cejas" class="promo-btn">Ver servicio</a>
-        </div>
-    </section>
-
-    <section id="cabello-hombres">
-        <div class="py-3 mb-4 w-100 rounded-3" id="navbar-cabello">
-
-            <h2 class="bg-transparent theme-primary" type="button" data-bs-toggle="collapse"
-                data-bs-target="#cabello-hombres" aria-expanded="false" aria-controls="cabello-hombres">
-                Cabello Hombres
-            </h2>
-
-            <div style="min-height: 140px;">
-                <div class="collapse collapse-horizontal text-center" id="cabello-hombres">
-                    <div class="row justify-content-center g-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/corte-hombre.jpg.jpeg" class="card-img-top" alt="Corte de cabello hombre">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Corte</h5>
-                                <p class="card-text fg-2">cortes clasicos para hombre.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/tinturado-hombre.jpg.jpeg" class="card-img-top"
-                                alt="Tinturado de cabello hombre">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Tinturado</h5>
-                                <p class="card-text fg-2">Rayitos y decoloracion completa para hombre.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-auto">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-
-    </section>
-    <section id="masajes">
-        <div class="py-3 mb-4 w-100 rounded-3" id="navbar-cabello">
-
-            <h2 class="bg-transparent theme-primary" type="button" data-bs-toggle="collapse" data-bs-target="#masajes"
-                aria-expanded="false" aria-controls="masajes">
-                Masajes
-            </h2>
-
-            <div style="min-height: 140px;">
-                <div class="collapse collapse-horizontal text-center" id="masajes">
-                    <div class="row justify-content-center g-3">
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/masaje-relajante.jpg" class="card-img-top" alt="Masaje relajante">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Masaje relajante</h5>
-                                <p class="card-text fg-2">Tipo spa , con musica y pequeño refrigerio para degustar.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/masaje-terapeutico.jpg" class="card-img-top" alt="masaje terapeutico">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Masaje terapeutico</h5>
-                                <p class="card-text fg-2">Para dolores musculares, espasmos y ventosas.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/masaje-reductor.jpg" class="card-img-top" alt="masaje reductor">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Masaje reductor</h5>
-                                <p class="card-text fg-2">Para dolores musculares, espasmos y ventosas.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="promo-banner container">
-        <img src="https://picsum.photos/1200/400?random=1" alt="Laminado de cejas">
-        <div class="promo-banner__texto">
-            <h3 class="promo-script">Laminado de cejas</h3>
-            <p>Cejas definidas, con forma y volumen por semanas.</p>
-            <a href="#cejas" class="promo-btn">Ver servicio</a>
-        </div>
-    </section>
-
-
-
-
-
-    <section id="limpieza-facial">
-        <div class="py-3 mb-4 w-100 rounded-3" id="navbar-cabello">
-
-            <h2 class="bg-transparent theme-primary" type="button" data-bs-toggle="collapse"
-                data-bs-target="#limpieza-facial" aria-expanded="false" aria-controls="limpieza-facial">
-                Limpieza Facial
-            </h2>
-
-            <div style="min-height: 140px;">
-                <div class="collapse collapse-horizontal text-center" id="limpieza-facial">
-                    <div class="row justify-content-center g-3">
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/limpieza-facial.jpg.jpeg" class="card-img-top" alt="Limpieza facial">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Limpieza facial</h5>
-                                <p class="card-text fg-2">Limpiezas faciales para acne con mascara led, vaporozono y
-                                    alta frecuencia.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/rejuvenecimiento-facial.jpg.jpg" class="card-img-top"
-                                alt="Rejuvenecimiento facial">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Rejuvenecimiento facial</h5>
-                                <p class="card-text fg-2">Levantamiento de lovulo facial, lineas de expresion y manchas.
-                                </p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/Acido-facial.jpg.jpg" class="card-img-top" alt="acido hialuronico">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Acido hialuronico</h5>
-                                <p class="card-text fg-2">Hidratacion profunda en las capas de la piel, tratamiento
-                                    inyectado.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/exosomas-facial.jpg.jpg" class="card-img-top" alt="Exosomas faciales">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Exosomas Faciales</h5>
-                                <p class="card-text fg-2">Regenerador celular, inyectado en tercio alto medio y bajo.
-                                </p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-
-    </section>
-    <section id="manicura">
-        <div class="py-3 mb-4 w-100 rounded-3" id="navbar-cabello">
-
-            <h2 class="bg-transparent theme-primary" type="button" data-bs-toggle="collapse" data-bs-target="#manicura"
-                aria-expanded="false" aria-controls="manicura">
-                Manicura
-            </h2>
-
-            <div style="min-height: 140px;">
-                <div class="collapse collapse-horizontal text-center" id="manicura">
-                    <div class="row justify-content-center g-3">
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/uñas-clasicas.jpg" class="card-img-top" alt="Uñas mujer">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Uñas Clásicas Mujer</h5>
-                                <p class="card-text fg-2">manicura y decorados clasicos para uñas naturales.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/uñas-hombre.jpg" class="card-img-top" alt="Uñas hombre">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Uñas Clasicas Hombre</h5>
-                                <p class="card-text fg-2">manicura y decorados clasicos para uñas naturales.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="promo-productos container">
-        <h3>Productos del salón</h3>
-        <div class="row g-3 justify-content-center">
-            <div class="col-12 col-md-4">
-                <a href="#" class="promo-producto">
-                    <img src="https://picsum.photos/600/450?random=2" alt="Shampoo">
                     <div>
-                        <h4>Shampoo reparador</h4>
-                        <p>Cuidado profundo para cabello maltratado.</p>
-                        <span>Ver producto →</span>
+                        <h4>Sala de Belleza Lily</h4>
+                        <span id="status-badge" class="status-badge">Verificando horario...</span>
                     </div>
-                </a>
+                </div>
+                <button class="close-btn" onclick="toggleChat()"><i class="bi bi-x-lg"></i></button>
             </div>
-            <div class="col-12 col-md-4">
-                <a href="#" class="promo-producto">
-                    <img src="https://picsum.photos/600/450?random=3" alt="Tratamiento">
-                    <div>
-                        <h4>Tratamiento capilar</h4>
-                        <p>Hidratación y brillo en casa.</p>
-                        <span>Ver producto →</span>
-                    </div>
-                </a>
+
+            <div id="chat-body" class="chat-body"></div>
+
+            <div id="quick-replies" class="quick-replies">
+                <button onclick="seleccionarOpcion('Agendar cita')">📅 Agendar cita</button>
+                <button onclick="seleccionarOpcion('Servicios y precios')">💇‍♀️ Servicios</button>
+                <button onclick="seleccionarOpcion('Horarios')">🕒 Horarios</button>
+                <button onclick="seleccionarOpcion('Ubicación')">📍 Ubicación</button>
+                <button onclick="seleccionarOpcion('Medios de pago')">💳 Pagos</button>
             </div>
-            <div class="col-12 col-md-4">
-                <a href="#" class="promo-producto">
-                    <img src="https://picsum.photos/600/450?random=4" alt="Crema">
-                    <div>
-                        <h4>Crema facial</h4>
-                        <p>Piel suave y renovada todos los días.</p>
-                        <span>Ver producto →</span>
-                    </div>
-                </a>
+
+            <div class="chat-footer">
+                <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí..."
+                    onkeypress="manejarEnter(event)">
+                <button onclick="enviarMensaje()"><i class="bi bi-send-fill"></i></button>
             </div>
         </div>
     </section>
 
+    <!-- FOOTER -->
+    <footer class="sbl-footer">
+        <div class="container">
+            <div class="row gy-4 align-items-center text-center text-md-start">
+                <div class="col-md-4">
+                    <h5 class="sbl-footer-brand">Sala de Belleza Lily</h5>
+                    <p class="sbl-footer-desc">
+                        Realzando tu belleza y cuidado personal con atención profesional.
+                    </p>
+                </div>
 
-    <section id="pedicura">
-        <div class="py-3 mb-4 w-100 rounded-3" id="navbar-cabello">
+                <div class="col-md-5" id="contacto">
+                    <h6 class="sbl-footer-heading">Contacto y Ubicación</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <a href="https://wa.me/573202172979" target="_blank" rel="noopener noreferrer"
+                                class="sbl-footer-link">
+                                <i class="bi bi-whatsapp sbl-footer-icon"></i>+57 320 217 2979
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://share.google/ALzG1qww7KhKONOiK" target="_blank" rel="noopener noreferrer"
+                                class="sbl-footer-link">
+                                <i class="bi bi-geo-alt-fill sbl-footer-icon"></i>Villamaría, Caldas — Ver en Google Maps
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-            <h2 class="bg-transparent theme-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pedicura"
-                aria-expanded="false" aria-controls="pedicura">
-                Pedicura
-            </h2>
+                <div class="col-md-3 text-md-end">
+                    <a href="https://share.google/ALzG1qww7KhKONOiK" target="_blank" rel="noopener noreferrer"
+                        class="sbl-btn-maps">
+                        Cómo llegar
+                    </a>
+                </div>
+            </div>
 
-            <div style="min-height: 140px;">
-                <div class="collapse collapse-horizontal text-center" id="pedicura">
-                    <div class="row justify-content-center g-3">
+            <hr class="sbl-footer-divider">
 
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/pedicura-mujer.jpg" class="card-img-top" alt="Pedicura mujer">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Pedicura Clasico Mujer</h5>
-                                <p class="card-text fg-2">Pedicura y decoración para mujeres, con hidratación y
-                                    exfoliación.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/Pedicura-hombre.jpg.jpg" class="card-img-top" alt="Pedicura hombre">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Pedicura Clasico Hombre</h5>
-                                <p class="card-text fg-2">Pedicura para hombres, desencarnar uñas enterradas y alivio
-                                    del dolor.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-
-                    </div>
-
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="sbl-footer-copy">
+                        &copy; 2026 <strong>Sala de Belleza Lily</strong>. Todos los derechos reservados.
+                    </p>
                 </div>
             </div>
         </div>
-
-
-
-    </section>
-
-    <section class="promo-testimonio container">
-        <h3 class="promo-titulo-linea">Liliana Maria Arboleda</h3>
-        <div class="promo-testimonio__fila">
-            <div class="promo-corazon">
-                <div class="promo-corazon__foto">
-                    <img src="img/foto-personal2.jpg.jpg" alt="Clienta">
-                </div>
-            </div>
-            <blockquote>
-                <p>Soy la dueña de la sala de belleza lily, siempre feliz de atenderlos, llevo mas de 20 años de trayectoria, amo mi trabajo y ofrecerles lo mejor a cada una de mis clientes y clientas, conmigo y mi equipo de trabajo van a recibir un servicio excepcional y de excelente calidad , los esperamos en Villamaria caldas.</p>
-                <cite>Liliana Maria Arboleda</cite>
-            </blockquote>
-        </div>
-    </section>
-
-
-    <section id="cejas">
-        <div class="py-3 mb-4 w-100 rounded-3" id="navbar-cabello">
-
-            <h2 class="bg-transparent theme-primary" type="button" data-bs-toggle="collapse" data-bs-target="#cejas"
-                aria-expanded="false" aria-controls="cejas">
-                Cejas
-            </h2>
-
-            <div style="min-height: 140px;">
-                <div class="collapse collapse-horizontal text-center" id="cejas">
-                    <div class="row justify-content-center g-3">
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/depilacion-cera.jpg" class="card-img-top" alt="Cejas depilacion cera">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Depilacion con Cera</h5>
-                                <p class="card-text fg-2">Depilacion con cera clasica y natural, alta definicion y durabilidad.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-                        
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/depilacion-henna.jpg.jpeg" class="card-img-top" alt="Cejas depilacion henna">
-                            <div class="card-body">
-                                <h5 class="mt-2 mb-0">Depilacion con Henna</h5>
-                                <p class="card-text fg-2">Sombreado de henna para cejas, definicion y resalto.</p>
-                                <a href="#contacto" class="btn btn-rosa-pastel w-100 mt-2">Ver más</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-
-    </section>
-
-
-
-    <footer>
-        <p>Sala de belleza lily, todos los derechos reservados 2026</p>
     </footer>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
-        crossorigin="anonymous"></script>
+
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <clipPath id="forma-corazon" clipPathUnits="objectBoundingBox">
+            <path
+                d="M0.5,1 C0.2,0.78 0,0.58 0,0.3 C0,0.12 0.13,0 0.27,0 C0.37,0 0.45,0.05 0.5,0.14 C0.55,0.05 0.63,0 0.73,0 C0.87,0 1,0.12 1,0.3 C1,0.58 0.8,0.78 0.5,1 Z" />
+        </clipPath>
+    </svg>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="agent.js"></script>
 </body>
-
-
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <clipPath id="forma-corazon" clipPathUnits="objectBoundingBox">
-        <path
-            d="M0.5,1 C0.2,0.78 0,0.58 0,0.3 C0,0.12 0.13,0 0.27,0 C0.37,0 0.45,0.05 0.5,0.14 C0.55,0.05 0.63,0 0.73,0 C0.87,0 1,0.12 1,0.3 C1,0.58 0.8,0.78 0.5,1 Z" />
-    </clipPath>
-</svg>
 
 </html>
